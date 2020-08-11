@@ -1,0 +1,23 @@
+.checkbox {
+    &__container {
+        display: flex;
+
+        .checkbox--reverse & {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__input {
+        margin-right: 20px;
+
+        .checkbox--hidden & {
+            display: none;
+            margin: 0;
+        }
+
+        .checkbox--reverse & {
+            margin-left: 20px;
+            margin-right: 0;
+        }
+    }
+}

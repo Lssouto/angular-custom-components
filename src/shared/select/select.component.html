@@ -1,0 +1,11 @@
+<div class="select" [ngClass]="{'select--collapsed': collapsed}">
+    <div class="select__container">
+        <div class="select__btn" (click)="collapsed = !collapsed;">
+            <ng-content select=".select-btn"></ng-content>
+        </div>
+        <div class="select__list-overlay" (click)="collapsed = true;"></div>
+        <div class="select__list">
+            <ng-content select="[select-option]"></ng-content>
+        </div>
+    </div>
+</div>
